@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 *vic3Dict.ts
+*vic3.cpp
+vic3Mapping/

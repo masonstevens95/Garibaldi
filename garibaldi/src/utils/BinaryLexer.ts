@@ -1,11 +1,13 @@
-type Token =
+// Types for tokens
+export type Token =
   | { type: "OPEN_BRACE" }
   | { type: "CLOSE_BRACE" }
   | { type: "EQUAL" }
   | { type: "IDENTIFIER"; value: string | number | boolean }
   | { type: "END_OF_FILE" };
 
-class BinaryLexer {
+// BinaryLexer implementation
+export class BinaryLexer {
   private view: DataView;
   private offset: number = 0;
   private length: number;
